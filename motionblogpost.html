@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: century gothic;
+  color: white;
+  padding: 20px;
+  background: #F2F2F2
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background:#D9D9D9;
+}
+
+/* Left column with a larger 10% gap on the outer left */
+.leftcolumn {
+  float: left;
+  width: 55%;
+  margin-left: 10%; 
+}
+
+/* Right column with a larger 8% gap on the outer right */
+.rightcolumn {
+  float: right; 
+  width: 20%;
+  margin-right: 13%; 
+}
+  .rightcolumn img {
+    display: block;
+    margin: 0 auto 15px auto; /* Centers the image and removes the mobile layout gap */
+    max-width: 100%;          /* Prevents the image from bursting out of the card */
+  }
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #bfafaf;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  max-width: 1500px;         
+  width: 100%;                
+  margin: 20px auto !important; 
+  display: block;           
+  padding: 20px;
+  text-align: center;
+  background: #d9d9d9;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    float: none;        /* Removes the desktop float behavior */
+    margin-left: 0;     /* Resets the 10% desktop left margin */
+    margin-right: 0;    /* Resets the 13% desktop right margin */
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="margin-bottom: 10px;">i swallowed wrong dot com</h2>
+    <p style="font-size: 10px;" >(professional identity under construction, please bear with me)</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Motion</h2>
+      <h5>November 6th, 2026</h5>
+      <img src="C:\Users\hollo\OneDrive\Documents\blog\images\motion1.jpeg" style="width:100%; height:100%; object-fit: cover;">
+      <h5><i>The crowd at Canada's Wonderland: Halloween Haunt, in Vaughan, ON. Taken November 1st, 2026.</i> <b>Photo by Michaela Holloway.</b></h5>
+      <p style="font-size: 24px;">Crowded, foggy, and very spooky... Canada's Wonderland is constantly moving-- whether it's the rollercoasters, thrill rides, or
+        overwhelming crowds. We got lost and walked through the "Kingdom of Carnage" so many times that a scare actor broke character to
+        ask us where the hell we're going. </p>
+         <video controls width="640" style="width:100%; height:100%; object-fit: cover;">
+  <source src="C:\Users\hollo\OneDrive\Documents\blog\images\motion.vid.MOV" type="video/mp4">
+</video>
+<h5><i>Canada's Wonderland: Halloween Haunt performance titled "Inferno" in Vaughan, ON. Taken November 1st, 2026.</i> <b>Video by Michaela Holloway.</b></h5>
+      <p style="font-size: 24px;">  There was also a really underwhelming fire performance. The actors were pretending that they were
+        outside the literal gates of hell to <a href="https://www.youtube.com/watch?v=1WpR8F2pcxg&list=PLJK9JdXaVMnTm84nOaccEFjB6pfn9FMm2" style="color: white">geometry dash sounding dubstep.</a></p>
+       <p>Stay tuned for my travel feature if you wanna hear more about Canada's Wonderland!
+      </p>
+        </div>
+ </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Where to next?!</h3>
+      <div class="fakeimg"><a href="index.html" style="color: white">Home</a></div><br>
+      <div class="fakeimg"><a href="aboutme.html" style="color: white">About Me</a></div><br>
+      <div class="fakeimg"><a href="post.html" style="color: white">Archive</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for visiting!</h2>
+   <p>Contact Me</p>
+   <p>hollowaymichaela02@gmail.com</p>
+</div>
+
+</body>
+</html>
